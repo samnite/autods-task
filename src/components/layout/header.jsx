@@ -7,6 +7,7 @@ const StyledHeader = styled.div`
   h1 {
     color: #5a5859;
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
     font-size: 24px;
   }
 `;

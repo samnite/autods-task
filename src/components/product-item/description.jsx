@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export { base } from '../../base';
+
 const StyledDescription = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,13 +22,14 @@ const StyledIds = styled.div`
   color: #b7b7b7;
   p {
     margin-right: 16px;
+    font-size: 13px;
   }
 `;
 
 const Description = () => {
   return (
     <StyledDescription>
-      <h4>Lorem ipsum dolor sit.</h4>
+      <h4>consequat excepteur excepteur</h4>
       <StyledIds>
         <p>Sell ID: ER36656685</p>
         <p>SKU: ER36656685</p>

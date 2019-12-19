@@ -1,10 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import Header from './components/layout/header';
 import Navigation from './components/navigation';
-import styled from 'styled-components';
 
 const StyledContainer = styled.div`
-  padding: 2rem;
+  max-width: 920px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 `;
 
 const App = () => {

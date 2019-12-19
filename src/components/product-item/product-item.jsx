@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Checkbox } from 'antd';
-import IMG from '../../assets/img/clock.png';
 import Description from './description';
 import InputForm from './input-form';
 
@@ -14,7 +13,8 @@ const StyledCheckbox = styled(Checkbox)`
   }
   .ant-checkbox-wrapper:hover .ant-checkbox-inner,
   .ant-checkbox:hover .ant-checkbox-inner,
-  .ant-checkbox-input:focus + .ant-checkbox-inner {
+  .ant-checkbox-input:focus + .ant-checkbox-inner,
+  .ant-checkbox-checked .ant-checkbox-inner {
     border-color: var(--primary-color);
   }
   img {
@@ -25,14 +25,27 @@ const StyledCheckbox = styled(Checkbox)`
 `;
 
 const StyledProduct = styled.div`
+  padding: 1rem;
   display: flex;
   position: relative;
+  border-bottom: 1px solid #e5e5e5;
 `;
-const ProductItem = () => {
+const ProductItem = ({ img, onIncrCount, onDecrCount }) => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const onChange = () => {
+    setIsChecked(!isChecked);
+    if (!isChecked) {
+      onIncrCount();
+    } else {
+      onDecrCount();
+    }
+  };
+
   return (
-    <StyledProduct>
-      <StyledCheckbox>
-        <img src={IMG} alt="ddd" />
+    <StyledProduct style={{ backgroundColor: isChecked ? '#f2f2f2' : '#fff' }}>
+      <StyledCheckbox onChange={onChange}>
+        <img src={img} alt="ddd" />
       </StyledCheckbox>
       <Description />
       <InputForm />

@@ -6,7 +6,7 @@ This app using: React, React Hooks, Styled Components, Ant Design
 
 Additions: Inputs from fields 'Source ID' and 'Source cite' you can see in console
 
-[Demo Link](https://app.netlify.com/sites/stupefied-williams-a3117e/overview).
+[Demo Link](https://stupefied-williams-a3117e.netlify.com/).
 
 ## Available scripts:
 

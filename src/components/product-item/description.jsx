@@ -7,9 +7,19 @@ const StyledDescription = styled.div`
   justify-content: center;
   h4 {
     margin-bottom: 0;
+    font-size: 15px;
+    color: var(--color-black);
   }
   p {
     margin: 0;
+  }
+`;
+
+const StyledIds = styled.div`
+  display: flex;
+  color: #b7b7b7;
+  p {
+    margin-right: 16px;
   }
 `;
 
@@ -17,7 +27,10 @@ const Description = () => {
   return (
     <StyledDescription>
       <h4>Lorem ipsum dolor sit.</h4>
-      <p>Lorem ipsum dolor.</p>
+      <StyledIds>
+        <p>Sell ID: ER36656685</p>
+        <p>SKU: ER36656685</p>
+      </StyledIds>
     </StyledDescription>
   );
 };

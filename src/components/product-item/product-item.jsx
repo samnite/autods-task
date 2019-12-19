@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Checkbox } from 'antd';
-import IMG from '../../assets/img/clock.jpg';
+import IMG from '../../assets/img/clock.png';
 import Description from './description';
+import InputForm from './input-form';
 
 const StyledCheckbox = styled(Checkbox)`
   .ant-checkbox-checked .ant-checkbox-inner {
@@ -25,6 +26,7 @@ const StyledCheckbox = styled(Checkbox)`
 
 const StyledProduct = styled.div`
   display: flex;
+  position: relative;
 `;
 const ProductItem = () => {
   return (
@@ -33,6 +35,7 @@ const ProductItem = () => {
         <img src={IMG} alt="ddd" />
       </StyledCheckbox>
       <Description />
+      <InputForm />
     </StyledProduct>
   );
 };

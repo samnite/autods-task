@@ -1,18 +1,18 @@
 @import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  /*font-family: 'Rubik', sans-serif;*/
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
 :root {
-  --primary-color: orange;
-  --secondary-color: blue;
+  --primary-color: #e49e4c;
+  --secondary-color: #2678d9;
+  --color-black: #727272;
 }

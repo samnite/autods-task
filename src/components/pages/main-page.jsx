@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tabs } from 'antd';
 import styled from 'styled-components';
-import Field from './pages/field/field';
-import Products from './pages/products';
+import DropField from './drop-field/drop-field';
+import Products from './products';
 
 const StyledTabs = styled(Tabs)`
   font-weight: 500;
@@ -17,10 +17,12 @@ const StyledTabs = styled(Tabs)`
   }
   .ant-tabs-tab,
   .ant-tabs-tab:hover {
-    margin: 0;
+    margin-right: 8px;
     font-size: 13px;
     padding: 12px 12px;
     color: #5a5859;
+  }
+  .ant-tabs-tab {
   }
 `;
 const StyledExtra = styled.p`
@@ -32,19 +34,17 @@ const StyledExtra = styled.p`
 const { TabPane } = Tabs;
 const operations = <StyledExtra>How do i get the source products ID</StyledExtra>;
 
-const Navigation = () => {
+const MainPage = () => {
   return (
-    <div>
-      <StyledTabs tabBarExtraContent={operations}>
-        <TabPane tab="Manual Add" key="1">
-          <Products />
-        </TabPane>
-        <TabPane tab="Add from CSV" key="2">
-          <Field />
-        </TabPane>
-      </StyledTabs>
-    </div>
+    <StyledTabs tabBarExtraContent={operations}>
+      <TabPane tab="Manual Add" key="1">
+        <Products />
+      </TabPane>
+      <TabPane tab="Add from CSV" key="2">
+        <DropField />
+      </TabPane>
+    </StyledTabs>
   );
 };
 
-export default Navigation;
+export default MainPage;

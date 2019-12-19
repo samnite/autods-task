@@ -22,10 +22,12 @@ const StyledInput = styled(Input)`
 const InputForm = () => {
   const [select, setSelect] = useState('Select source site');
   const handleInput = e => {
+    // Need for task
     console.log(e.target.value);
   };
   const handleSelect = value => {
     setSelect(value);
+    // Need for task
     console.log(value);
   };
   return (

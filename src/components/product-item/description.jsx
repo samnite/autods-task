@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export { base } from '../../base';
-
 const StyledDescription = styled.div`
   display: flex;
   flex-direction: column;

@@ -13,9 +13,10 @@ const StyledHeader = styled.div`
 `;
 const StyledIcon = styled.div`
   position: absolute;
-  right: 0;
+  right: -16px;
   top: 0;
   svg {
+    height: 12px;
     color: #b7b7b7;
   }
 `;
@@ -24,7 +25,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledIcon>
-        <Icon type="close" viewBox="0 0 1024 1024" />
+        <Icon type="close" />
       </StyledIcon>
       <h1>23 Untracked products in my store</h1>
     </StyledHeader>
@@ -32,4 +33,3 @@ const Header = () => {
 };
 
 export default Header;
-//

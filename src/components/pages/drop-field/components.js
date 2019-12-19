@@ -16,7 +16,7 @@ export const StyledField = styled.div`
   background: #f2f2f2;
   border-radius: 4px;
   img {
-    padding: 7px 6px;
+    margin-bottom: 13px;
     height: 40px;
     border-radius: 2px;
   }

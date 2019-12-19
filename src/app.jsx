@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from './components/layout/header';
-import Navigation from './components/navigation';
+import MainPage from './components/pages/main-page';
 
 const StyledContainer = styled.div`
   max-width: 920px;
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <StyledContainer>
       <Header />
-      <Navigation />
+      <MainPage />
     </StyledContainer>
   );
 };

@@ -3,7 +3,7 @@ import Button from '../../button';
 import { StyledGrid, StyledField, StyledAside, StyledHr } from './components';
 import dropImg from '../../../assets/img/drop.svg';
 
-const Field = () => {
+const DropField = () => {
   return (
     <>
       <StyledGrid>
@@ -33,4 +33,4 @@ const Field = () => {
   );
 };
 
-export default Field;
+export default DropField;

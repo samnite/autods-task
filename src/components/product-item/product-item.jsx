@@ -18,9 +18,8 @@ const StyledCheckbox = styled(Checkbox)`
     border-color: var(--primary-color);
   }
   img {
-    height: 64px;
-    border-radius: 10px;
-    padding: 0 0.5rem;
+    height: 60px;
+    padding: 0 8px;
   }
 `;
 
@@ -45,7 +44,7 @@ const ProductItem = ({ img, onIncrCount, onDecrCount }) => {
   return (
     <StyledProduct style={{ backgroundColor: isChecked ? '#f2f2f2' : '#fff' }}>
       <StyledCheckbox onChange={onChange}>
-        <img src={img} alt="ddd" />
+        <img src={img} alt="Item" />
       </StyledCheckbox>
       <Description />
       <InputForm />

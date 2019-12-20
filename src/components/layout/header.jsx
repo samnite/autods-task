@@ -11,7 +11,7 @@ const StyledHeader = styled.div`
     font-size: 24px;
   }
 `;
-const StyledIcon = styled.div`
+const StyledIcon = styled(Icon)`
   position: absolute;
   right: -16px;
   top: 0;
@@ -24,9 +24,7 @@ const StyledIcon = styled.div`
 const Header = () => {
   return (
     <StyledHeader>
-      <StyledIcon>
-        <Icon type="close" />
-      </StyledIcon>
+      <StyledIcon type="close" />
       <h1>23 Untracked products in my store</h1>
     </StyledHeader>
   );

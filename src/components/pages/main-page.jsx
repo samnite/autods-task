@@ -8,7 +8,8 @@ const StyledTabs = styled(Tabs)`
   font-weight: 500;
   font-size: 13px;
   .ant-tabs-ink-bar {
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+    background-color: var(--primary-color);
   }
   .ant-tabs-tab-active {
     font-size: 13px;
